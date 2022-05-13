@@ -7,7 +7,7 @@
 
     use Telegram\Bot\Api;
 
-    $telegram = new Api('5208720220:AAGs97b5PavMtgwX-f81Dp9OYiMchxL5GSg'); //Передаем токен
+    $telegram = new Api(); //Передаем токен
     $result = $telegram->getWebhookUpdates(); //Передаем в переменную $result полную информацию о сообщении пользователя
 
     $text = $result["message"]["text"]; //Текст сообщения
